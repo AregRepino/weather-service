@@ -1,0 +1,49 @@
+{
+  "coord": {
+    "lon": 30.292,
+    "lat": 59.9607
+  },
+  "weather": [
+    {
+      "id": 804,
+      "main": "Clouds",
+      "description": "overcast clouds",
+      "icon": "04n"
+    },
+    {
+      "id": 804,
+      "main": "Clouds",
+      "description": "overcast clouds",
+      "icon": "04n"
+    }
+  ],
+  "base": "stations",
+  "main": {
+    "temp": 261.78,
+    "feels_like": 254.78,
+    "temp_min": 260.38,
+    "temp_max": 262.62,
+    "pressure": 1010,
+    "humidity": 90
+  },
+  "visibility": 10000,
+  "wind": {
+    "speed": 5,
+    "deg": 110
+  },
+  "clouds": {
+    "all": 100
+  },
+  "dt": 1641655349,
+  "sys": {
+    "type": 2,
+    "id": 197864,
+    "country": "RU",
+    "sunrise": 1641624930,
+    "sunset": 1641647697
+  },
+  "timezone": 10800,
+  "id": 581307,
+  "name": "Aptekarskiy",
+  "cod": 200
+}

@@ -1,0 +1,26 @@
+#spring:
+#    datasource:
+#        platform: postgres
+#        url: jdbc:postgresql://localhost:5432/dbeaver
+#        username: postgres
+#        driver-class-name: org.postgresql.Driver
+#    jpa:
+#      database: postgresql
+#      database-platform: org.hibernate.dialect.PostgreSQL10Dialect
+
+
+server:
+  port: 9009
+
+app:
+  lat: 60.016033
+  lon: 30.475637
+  units : metric
+
+
+openweathermap:
+  name: owm
+  url: https://api.openweathermap.org/data/2.5
+  appId: c3abaecbc743903dd432a1d8d797c743
+
+
