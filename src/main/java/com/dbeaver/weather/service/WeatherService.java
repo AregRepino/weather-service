@@ -23,12 +23,10 @@ public class WeatherService {
 
 
     public WeatherHistory queryCurrentWeather() {
-        // 27 - 30
-        WeatherHistory weatherHistory = weatherRepository.findByWeatherDate(LocalDate.now());
+        WeatherHistory weatherHistory = weatherRepository.findByDate(LocalDate.now());
         if (weatherHistory != null) {
             return weatherHistory;
         }
-
 
         OpenWeatherMapResult openWeatherMapResult = openWeatherMapClient.getCurrentWeather(appConfig.getLat(), appConfig.getLon(), appConfig.getUnits());
         double temp = openWeatherMapResult.getMain().getTemp();

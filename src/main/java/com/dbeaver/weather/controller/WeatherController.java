@@ -20,10 +20,6 @@ public class WeatherController {
     @GetMapping(value = "/weather", produces = "application/json")
     public WeatherHistoryDto getCurrentWeather() {
 
-
-//        double temp = weatherService.queryCurrentWeather();
-//        WeatherDto weatherDto = new WeatherDto(temp);
-
         WeatherHistory weatherHistory = weatherService.queryCurrentWeather();
         WeatherHistoryDto weatherHistoryDto = weatherMapper.toWeatherHistoryDto(weatherHistory);
 

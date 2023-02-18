@@ -96,7 +96,7 @@ public class WeatherServiceTest {
         weatherHistory.setTemperature(20.0);
 
 
-        given(this.weatherRepository.findByWeatherDate(any())).willReturn(weatherHistory);
+        given(this.weatherRepository.findByDate(any())).willReturn(weatherHistory);
         //        when
 
         WeatherHistory result = weatherService.queryCurrentWeather();
@@ -106,10 +106,5 @@ public class WeatherServiceTest {
         assertEquals(weatherHistory,result);
 
     }
-
-    // метод queryCurrentWeather
-    // в этом методе нужно отработать другой сценарий
-    // а иммено когда репозеторий возрошает результат
-    // для этого мне нужно мокировать только репозеторий
 
 }

@@ -10,6 +10,6 @@ import java.time.LocalDate;
 public interface WeatherRepository extends CrudRepository<WeatherHistory, Long> {
 
 
-    WeatherHistory findByWeatherDate(LocalDate weatherDate);
+    WeatherHistory findByDate(LocalDate date);
 
 }
