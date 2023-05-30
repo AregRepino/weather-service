@@ -44,6 +44,12 @@ dependencies {
     implementation 'org.mapstruct:mapstruct:1.5.3.Final'
     annotationProcessor 'org.mapstruct:mapstruct-processor:1.5.3.Final'
 
+    testImplementation group: 'org.testcontainers', name: 'postgresql', version: '1.17.6'
+
+    // Mocking requests to external resources
+    testImplementation group: 'org.springframework.cloud', name: 'spring-cloud-contract-wiremock', version: '3.1.0'
+
+
 
 //	// for Main sources set
 //	implementation 'org.mapstruct:mapstruct-jdk8:1.2.0.Final'
